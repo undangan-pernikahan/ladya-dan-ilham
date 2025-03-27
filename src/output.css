@@ -662,10 +662,6 @@ video {
   max-height: 100vh;
 }
 
-.min-h-screen {
-  min-height: 100vh;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -1358,10 +1354,6 @@ video {
     width: 10rem;
   }
 
-  .lg\:w-full {
-    width: 100%;
-  }
-
   .lg\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
@@ -1410,18 +1402,8 @@ video {
     line-height: 1;
   }
 
-  .lg\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
   .lg\:text-xl {
     font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .lg\:text-lg {
-    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
@@ -1439,10 +1421,6 @@ video {
     width: 40%;
   }
 
-  .xl\:w-full {
-    width: 100%;
-  }
-
   .xl\:space-y-10 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1452,11 +1430,6 @@ video {
   .xl\:text-8xl {
     font-size: 6rem;
     line-height: 1;
-  }
-
-  .xl\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 
   .xl\:text-lg {
@@ -1517,6 +1490,15 @@ video {
     margin-bottom: calc(1rem * var(--tw-space-y-reverse));
   }
 
+  .hp\:border-white {
+    --tw-border-opacity: 1;
+    border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+  }
+
+  .hp\:stroke-white {
+    stroke: #fff;
+  }
+
   .hp\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1539,6 +1521,48 @@ video {
   .hp\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .hp\:font-bold {
+    font-weight: 700;
+  }
+
+  .hp\:font-extralight {
+    font-weight: 200;
+  }
+
+  .hp\:font-thin {
+    font-weight: 100;
+  }
+
+  .hp\:text-warna2 {
+    --tw-text-opacity: 1;
+    color: rgb(181 191 153 / var(--tw-text-opacity, 1));
+  }
+
+  .hp\:text-warna3 {
+    --tw-text-opacity: 1;
+    color: rgb(144 161 85 / var(--tw-text-opacity, 1));
+  }
+
+  .hp\:text-gray-400 {
+    --tw-text-opacity: 1;
+    color: rgb(156 163 175 / var(--tw-text-opacity, 1));
+  }
+
+  .hp\:text-green-300 {
+    --tw-text-opacity: 1;
+    color: rgb(134 239 172 / var(--tw-text-opacity, 1));
+  }
+
+  .hp\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  }
+
+  .hp\:text-black {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity, 1));
   }
 }
 
