@@ -52,21 +52,21 @@
         <source src="img/backsound.mp3" type="audio/mpeg">
     </audio>    
     <section id="section1" class="flex w-full justify-center items-center">
-        <main class="w-full lg:min-h-screen flex flex-col items-center bg-cover bg-center shadow-2xl" style="background-image: url('img/F1.jpg');">
-            <div class="px-8 py-24 hp:space-y-12 space-y-12">
-                <p class="text-2xl text-center font-contrail font-medium mb-4 text-white hp:mb-20">The Wedding Of</p>
-                <div class="space-y-4">
-                    <p class="text-7xl text-left font-great text-white hp:mb-6">Ladya</p>
-                    <p class="text-4xl mb-3 font-kausan text-center text-white hp:mb-6">&</p>
-                    <p class="text-7xl mb-8 font-great text-right text-white">Ilham</p>
+        <main class="w-full min-h-screen flex flex-col items-center bg-cover bg-center shadow-2xl" style="background-image: url('img/F1.jpg');">
+            <div class="hp:mt-72 hp:py-0 px-8 py-24 hp:space-y-0 space-y-12">
+                <p class="text-2xl text-center font-contrail font-medium mb-4 text-white">The Wedding Of</p>
+                <div class="hp:space-y-0 space-y-4">
+                    <p class="text-7xl hp:text-6xl text-left font-great text-white">Ladya</p>
+                    <p class="text-4xl hp:text-3xl mb-3 font-kausan text-center text-white hp:mb-6">&</p>
+                    <p class="text-7xl hp:text-6xl mb-8 font-great text-right text-white">Ilham</p>
                 </div>
                 <div>
-                    <p class="italic font-semibold text-xl text-center text-white">Dear : </p>
-                    <p class="italic font-semibold text-2xl text-center text-white" id="namaTamu">Yang diundang & Keluarga</p>
+                    <p class="italic font-semibold text-xl text-center text-white hp:text-base">Dear : </p>
+                    <p class="italic font-semibold text-2xl text-center text-white hp:text-lg" id="namaTamu">Yang diundang & Keluarga</p>
                 </div>
                 <div class="flex justify-center">
                     <button  onclick="playMusicAndScroll()" 
-                    class="bg-gradient-to-r from-warna1 via-warna2 to-warna1 text-xl py-1 px-4 text-white font-semibold rounded-lg mt-4">
+                    class="bg-gradient-to-r from-warna1 via-warna2 to-warna1 text-xl hp:text-lg py-1 px-4 text-white font-semibold rounded-lg mt-4">
                     <i class="fa-solid fa-envelope mr-2"></i>Buka Undangan</button>
                 </div>
             </div>
@@ -353,8 +353,8 @@
 <script>
     function playMusicAndScroll() {
         var audio = document.getElementById("bg-music");
-        audio.play(); // Mulai musik
-        document.getElementById('section2').scrollIntoView({ behavior: 'smooth' }); // Scroll ke section2
+        audio.play();
+        document.getElementById('section2').scrollIntoView({ behavior: 'smooth' });
     }
     </script>
 <script>

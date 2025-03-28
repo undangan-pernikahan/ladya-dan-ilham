@@ -662,6 +662,10 @@ video {
   max-height: 100vh;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1447,6 +1451,30 @@ video {
     margin-bottom: 1.5rem;
   }
 
+  .hp\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .hp\:mt-40 {
+    margin-top: 10rem;
+  }
+
+  .hp\:mt-60 {
+    margin-top: 15rem;
+  }
+
+  .hp\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
+  .hp\:mt-64 {
+    margin-top: 16rem;
+  }
+
+  .hp\:mt-72 {
+    margin-top: 18rem;
+  }
+
   .hp\:size-16 {
     width: 4rem;
     height: 4rem;
@@ -1490,13 +1518,10 @@ video {
     margin-bottom: calc(1rem * var(--tw-space-y-reverse));
   }
 
-  .hp\:border-white {
-    --tw-border-opacity: 1;
-    border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
-  }
-
-  .hp\:stroke-white {
-    stroke: #fff;
+  .hp\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .hp\:px-8 {
@@ -1504,8 +1529,27 @@ video {
     padding-right: 2rem;
   }
 
+  .hp\:py-60 {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+
+  .hp\:py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .hp\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   .hp\:pb-8 {
     padding-bottom: 2rem;
+  }
+
+  .hp\:pt-20 {
+    padding-top: 5rem;
   }
 
   .hp\:text-base {
@@ -1523,46 +1567,24 @@ video {
     line-height: 1rem;
   }
 
-  .hp\:font-bold {
-    font-weight: 700;
+  .hp\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
-  .hp\:font-extralight {
-    font-weight: 200;
+  .hp\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
-  .hp\:font-thin {
-    font-weight: 100;
+  .hp\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
-  .hp\:text-warna2 {
-    --tw-text-opacity: 1;
-    color: rgb(181 191 153 / var(--tw-text-opacity, 1));
-  }
-
-  .hp\:text-warna3 {
-    --tw-text-opacity: 1;
-    color: rgb(144 161 85 / var(--tw-text-opacity, 1));
-  }
-
-  .hp\:text-gray-400 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175 / var(--tw-text-opacity, 1));
-  }
-
-  .hp\:text-green-300 {
-    --tw-text-opacity: 1;
-    color: rgb(134 239 172 / var(--tw-text-opacity, 1));
-  }
-
-  .hp\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-  }
-
-  .hp\:text-black {
-    --tw-text-opacity: 1;
-    color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+  .hp\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
