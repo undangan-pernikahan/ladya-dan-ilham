@@ -182,7 +182,7 @@
             </div>
         </main>
     </section>
-    <section id="section11" class="flex w-full justify-center items-center">
+    <section id="section11" class="flex w-full justify-center items-center efek">
         <main class="w-full lg:min-h-screen flex flex-col justify-center items-center bg-cover bg-center shadow-2xl" style="background-image: url('img/F11.jpg');">
             <div class="px-4 py-8">
                 <div class="flex-col hp:space-y-2 xs:space-y-2 sm:space-y-2 xl:space-y-4 justify-center flex items-center text-white px-5 py-3 sm:px-10 lg:px-20 lg:py-7 space-y-2 animasi11 bg-warna3 rounded-xl bg-opacity-35">
@@ -378,11 +378,24 @@
     
 </body>
 <script>
-    function playMusicAndScroll() {
+    function playMusic() {
         var audio = document.getElementById("bg-music");
-        audio.play();
+        if (audio.paused) { 
+            audio.play();
+            document.removeEventListener("wheel", playMusic);
+        document.removeEventListener("touchmove", playMusic);
+        }
+    }
+    
+    function playMusicAndScroll() {
+        playMusic(); 
         document.getElementById('section2').scrollIntoView({ behavior: 'smooth' });
     }
+    
+    document.addEventListener("wheel", playMusic, { once: true });
+    document.addEventListener("touchmove", playMusic, { once: true });
+    document.addEventListener("click", playMusic, { once: true });
+    
     </script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
