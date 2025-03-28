@@ -182,6 +182,33 @@
             </div>
         </main>
     </section>
+    <section id="section11" class="flex w-full justify-center items-center">
+        <main class="w-full lg:min-h-screen flex flex-col justify-center items-center bg-cover bg-center shadow-2xl" style="background-image: url('img/F11.jpg');">
+            <div class="px-4 py-8">
+                <div class="flex-col hp:space-y-2 xs:space-y-2 sm:space-y-2 xl:space-y-4 justify-center flex items-center text-white px-5 py-3 sm:px-10 lg:px-20 lg:py-7 space-y-2 animasi11 bg-warna3 rounded-xl bg-opacity-35">
+                    <div>
+                        <p class="text-3xl xs:text-5xl sm:text-5xl lg:text-7xl xl:text-8xl text-center font-contrail font-medium text-white">Love Story</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="font-breee text-xl lg:text-3xl">Berkenalan kembali</p>
+                        <p class="font-belleza lg:text-xl ">Kami sudah saling mengenal sejak lama, karena tumbuh dilingkungan yang sama, hanya sebatas tahu tanpa adanya komunikasi yang begitu berarti. Waktu berlalu, kami menjalani kehidupan masing-masing, hingga pada suatu hari di akhir tahun 2024, pesan hangat darinya membuka kisah yang lebih indah. Saling bertukar kabar setiap hari, membuat kami saling mengenal lebih jauh, merasa nyaman satu sama lain.
+                        </p>  
+                    </div>
+                    <div class="text-center">
+                        <p class="font-breee text-xl lg:text-3xl">First date</p>
+                        <p class="font-belleza lg:text-xl shadow-inner">First date kami cukup sederhana, jalan-jalan menyusuri tepian danau yang saat itu langit nya berpendar keemasan, percakapan mengalir, membuat rasa nyaman  ini semakin nyata, yang pada akhirnya saling merasakan ”This is the one im looking for”
+                        </p>  
+                    </div>
+                    <div class="text-center">
+                        <p class="font-breee text-xl lg:text-3xl">Long Short Story</p>
+                        <p class="font-belleza lg:text-xl shadow-inner">Tak butuh waktu lama setelah first date itu, dia menyampaikan ingin membawa hubungan ini ke arah yang lebih serius. Aku mencoba meyakinkan hati, dengan kesungguhan dan ketulusan yang dia tunjukkan, dengan banyak do’a yang sudah aku panjatkan selama ini aku InysaAllah bersedia. Kini dengan restu keluarga dan do’a yang tak pernah putus, perjalanan kami menuju satu ikatan suci, kami melangkah menuju lembaran baru. Kami mengundang orang-orang tersayang untuk menjadi bagian dari kebahagiaan kami, menyaksikan awal dari perjalanan yang penuh berkah ini
+                        </p>  
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+    </section>
     <section id="section6" class="flex w-full justify-center items-center efek">
         <main class="w-full lg:min-h-screen flex flex-col items-center bg-cover bg-center shadow-2xl" style="background-image: url('img/F6.jpg');">
             <div class="px-2 py-8 ">
@@ -420,6 +447,37 @@
                     });
     
                     gsap.from("#section3 .animasi3", {
+                        opacity: 0,
+                        y: 50,
+                        duration: 3.5,
+                        stagger: 0.3,
+                        ease: "power3.out"
+                    });
+    
+                    observer.unobserve(section);
+                }
+            });
+        }, { threshold: 0.2 });
+    
+        observer.observe(section);
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const section = document.querySelector("#section11");
+    
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    gsap.to("#section11", { 
+                        opacity: 1, 
+                        y: 0, 
+                        duration: 1, 
+                        ease: "power3.out" 
+                    });
+    
+                    gsap.from("#section11 .animasi11", {
                         opacity: 0,
                         y: 50,
                         duration: 3.5,
